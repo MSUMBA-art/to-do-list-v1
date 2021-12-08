@@ -10,10 +10,11 @@ app.get('/', function(req, res)  {
     if (currentDay === 7 || currentDay === 0) {
         res.write("yerrrrr it is weekend");
     } else {
-       res.send("<h1>I am working</h1><p><ul><li>Alexander<li>Msumba</li></li></ul></p>");
-    //    res.write("yerrrrr I am going");
-    //    res.write("please wait");
-    //    res.send();
+      // res.write("<p>Alexander ms</p>");
+      // res.write("<h1>yerrrrr I am going</h1>");
+      // res.write("<i>please wait</i>");
+      // res.send();
+      res.sendFile(__dirname + "/index.html")
     }
 })
 
