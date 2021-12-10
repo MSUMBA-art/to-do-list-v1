@@ -7,6 +7,7 @@ let items = ["Buy Food", "Cook Food", "Eat Food"] ;
 app.set('view engine', 'ejs'); // always below express();
 
 app.use(bodyParser.urlencoded( {extended: true})) //for app.post to be triggered
+app.use(express.static("public"))
 
 app.get('/', function(req, res)  {
     let today = new Date();
