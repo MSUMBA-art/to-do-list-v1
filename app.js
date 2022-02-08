@@ -1,13 +1,13 @@
 const express = require("express");
 const bodyParser = require("body-parser");
+const mongoose = require("mongoose");
 const date = require(__dirname + "/date.js");
 
 //console.log(date());
 
 const app = express();
 
-const items = ["Buy Food", "Cook Food", "Eat Food"];
-const workItems = [];
+
 
 app.set("view engine", "ejs"); // always below express();
 
@@ -52,5 +52,5 @@ app.post("/work", function(req, res) {
 })
 
 app.listen(3000, () => {
-  console.log(`Example app listening`);
+  console.log(`Server started on port 3000`);
 });
