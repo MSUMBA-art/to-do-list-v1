@@ -1,26 +1,26 @@
-//jshint esversion:6
+// //jshint esversion:6
 
-exports.getDate = function() {
+// exports.getDate = function() {
 
- const today = new Date();
+//  const today = new Date();
 
-const options = {
-    weekday: "long",
-    day: "numeric",
-    month: "long",
-    year: "numeric",
-  };
+// const options = {
+//     weekday: "long",
+//     day: "numeric",
+//     month: "long",
+//     year: "numeric",
+//   };
 
-  return today.toLocaleDateString("en-US", options); // Saturday, September 17, 2016
+//   return today.toLocaleDateString("en-US", options); // Saturday, September 17, 2016
   
-}
+// }
 
-exports.getDay = function() {
- const today = new Date();
+// exports.getDay = function() {
+//  const today = new Date();
 
-const options = {
-    weekday: "long",
-  };
+// const options = {
+//     weekday: "long",
+//   };
 
-   return today.toLocaleDateString("en-US", options); // Saturday, September 17, 2016
-}
+//    return today.toLocaleDateString("en-US", options); // Saturday, September 17, 2016
+// }

@@ -8,12 +8,21 @@
     </div>
 
     <div class="box">
-       <% for (var i =0; i<newListItems.length;  i++ ) { %>
-       
-        <div class="item">
+
+       <% newListItems.forEach( function(item){%>
+            <div class="item">
             <input type="checkbox">
-             <p><%=newListItems[i] %></p>
+             <p><%=item.name %></p>
         </div>
+            
+        <%}) %>
+
+
+
+
+       <!-- <% for (var i =0; i<newListItems.length;  i++ ) { %> -->
+       
+        
 <% } %> 
 
 <form class="item" action="/" method="post">
